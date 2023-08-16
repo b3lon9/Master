@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    입력을 하게 되면 곱하기 2를 합니다
+</body>
+
+<script type="text/javascript">
+    var exam_script = {
+        plus_num:function(num) {
+            try {
+                Hororo.showToast(num + '..,,?va')
+                var result = num * 2
+                Hororo.getDoubleNum(result)
+            } catch(err) {
+                Hororo.showToast(err)
+            }
+        }
+    }
+</script>
+</html>

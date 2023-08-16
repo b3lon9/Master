@@ -27,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         // val assetUrl = "assets/index.html"
         val assetUrl = "file:///android_asset/index.html"
+        val assetUrl2 = "file:///android_asset/exam.html"
 
 
 
@@ -36,14 +37,25 @@ class MainActivity : AppCompatActivity() {
 
             addJavascriptInterface(WebAppInterface(context), "Hororo")
         }
-        binding.webLayout.loadUrl("https://www.naver.com")
+
+
+        binding.webLayout.loadUrl(assetUrl2)
+        binding.sendButton.setOnClickListener {
+            binding.webLayout.loadUrl("javascript:exam_script.plus_num(\"${binding.editText.text}\")")
+        }
+
     }
 
-    private class WebAppInterface(val context:Context) {
+    private inner class WebAppInterface(val context:Context) {
         // show toast from the web page
         @JavascriptInterface
         fun showToast(toast:String) {
             Toast.makeText(context, "Web King...!!!$toast", Toast.LENGTH_SHORT).show()
+        }
+
+        @JavascriptInterface
+        fun getDoubleNum(result:Int) {
+            binding.topBar.text = result.toString() + "horarararara"
         }
     }
 }
