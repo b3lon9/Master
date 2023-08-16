@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--styles factory-->
+<resources>
+    <style name="Basic">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Basic.WidthMatch">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Basic.WidthWrap">
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+</resources>
