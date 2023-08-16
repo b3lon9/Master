@@ -1,0 +1,15 @@
+/build
+
+# protect
+Constant/
+
+# private files
+*.json
+*.9.png
+*.png
+
+
+# trash
+*.webp
+
+xml/
