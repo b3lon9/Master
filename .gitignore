@@ -39,3 +39,6 @@ google-services.json
 *.xcuserstate
 /*.xcuserstate
 *.pbxproj
+
+# 용량 최소화
+*.png
