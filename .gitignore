@@ -31,3 +31,11 @@ google-services.json
 
 # Android Profiling
 *.hprof
+
+
+# ios 
+*.json
+*.plist
+*.xcuserstate
+/*.xcuserstate
+*.pbxproj
