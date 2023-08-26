@@ -42,3 +42,8 @@ google-services.json
 
 # 용량 최소화
 *.png
+
+*.xcodeproj
+/Assets.xcassets
+AppDelegate.swift
+SceneDelegate.swift
