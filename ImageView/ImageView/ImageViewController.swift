@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ImageViewController: UIViewController {
     var isZoom = false  // 확대여부
     var imgOn:UIImage?      // 켜진 전구 이미지를 가진 변수
     var imgOff:UIImage?     // 꺼진 전구 이미지를 가진 변수
